@@ -1,0 +1,82 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Add Author
+            <p class="lead"></p>
+          </h1>
+        </div>
+        <div class="col-md-5">
+          <div class="well well-lg"> 
+            <div class="row">
+              <div class="col-sm-12">       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-spacer"> </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12"> 
+        <div class="panel">
+          <div class="panel-body">
+            <!-- Form Starts -->
+    <div class=" addItem ">
+       <div class="col-lg-4 add ">
+        <form (ngSubmit)="AddAuthor()">
+          <div class="form-group ">
+       
+          <!-- <div class="alert alert-danger" role="alert" >
+            <div class="alert-text"><strong style="color: red;"><%=msg%></strong></div>
+          </div> -->
+      
+        <label for="authorName">Author Name</label>
+        <input type="text" name="name" class="form-control" [(ngModel)]="author.name"   required>
+      </div>
+      <div class="form-group">
+        <label for="Nationality">Nationality</label>
+        <input type="text" name="nationality" class="form-control" [(ngModel)]="author.nationality" required>
+      </div>
+        <div class="form-group ">
+          <label for="image">Image URL</label>
+          <input type="text" name="image" class="form-control" [(ngModel)]="author.image" required>
+        </div>
+        <div class="form-group ">
+          <label for="details">Details</label>
+          <input type="text" name="details" class="form-control" [(ngModel)]="author.details" required>
+        </div>
+        <div class="d-flex justify-content-center " >
+          <button type="submit" class="btn btn-danger "id="button">Add Author</button>
+        </div>
+    </form>
+  </div>
+  <br>
+  </div>
+  <!-- Form ENds -->
+            
+            
+          
+            
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div>
+    </div>
+  </div>
+                                                  
+                                                                                  
+  <hr>
