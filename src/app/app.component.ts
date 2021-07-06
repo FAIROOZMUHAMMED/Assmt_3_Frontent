@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { AuthService } from './auth.service';
+
 
 @Component({
   selector: 'app-root',
@@ -8,18 +7,6 @@ import { AuthService } from './auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend';
-  constructor(public _auth:AuthService,
-    private _router:Router){
+  
 
-}
-logoutUser()
-{
-localStorage.removeItem('token')
-this._router.navigate([''])
-}
-loggedUser()
-{
-  this._router.navigate([''])
-}
 }

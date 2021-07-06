@@ -20,6 +20,8 @@ import { UpdateBookComponent } from './update-book/update-book.component';
 import { UpdateAuthorComponent } from './update-author/update-author.component'; 
 import { AuthService } from './auth.service';
 import { TokenInterceptorService } from './token-interceptor.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -37,6 +39,8 @@ import { TokenInterceptorService } from './token-interceptor.service';
     HomeComponent,
     UpdateBookComponent,
     UpdateAuthorComponent,
+    HeaderComponent,
+    FooterComponent,
    
   ],
   imports: [

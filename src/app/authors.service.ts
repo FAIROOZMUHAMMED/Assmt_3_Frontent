@@ -14,24 +14,24 @@ export class AuthorsService {
 
   constructor(private http:HttpClient) { }
   getAuthor(id:any){
-    return this.http.get("http://localhost:3300/authors/"+id);
+    return this.http.get("/api/authors/"+id);
   }
   getAuthors(){
-    return this.http.get("http://localhost:3300/authors");
+    return this.http.get("/api/authors");
   }
   newAuthor(item:any)
   {   
-    return this.http.post("http://localhost:3300/authors/add",{"author":item})
+    return this.http.post("/api/authors/add",{"author":item})
     .subscribe(data =>{console.log(data)})
   }
   deleteAuthor(id:any)
   {
-    return this.http.delete("http://localhost:3300/authors/remove/"+id)
+    return this.http.delete("/api/authors/remove/"+id)
   }
   editAuthor(author:any)
   {
     console.log('client update')
-    return this.http.put("http://localhost:3300/authors/update",author)
+    return this.http.put("/api/authors/update",author)
     .subscribe(data =>{console.log(data)})
   }
 }
